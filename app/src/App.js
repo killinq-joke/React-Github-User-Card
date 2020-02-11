@@ -3,13 +3,15 @@ import axios from 'axios';
 
 
 import "./App.css";
-
+import styled from 'styled-components';
 
 
 import Card from './Card';
 import CardList from './CardList';
 
-
+const Container = styled.div`
+background: dodgerblue;
+`
 
 
 class App extends Component {
@@ -41,10 +43,10 @@ class App extends Component {
     
     const { peoples, name, img, url } = this.state;
     console.log(peoples)
-    return <div className="App">
+    return <Container className="App">
       <CardList peoples={this.state.peoples}/>
       
-    </div>;
+    </Container>;
   }
 }
 

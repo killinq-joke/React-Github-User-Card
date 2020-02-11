@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Div = styled.div`
+background: white;
+border: 1px solid black;
 width: 40%;
-margin: 30px 0;
+margin: 10px;
+padding: 10px 0;
 `
 
 const Avatar = styled.img`
