@@ -8,9 +8,19 @@ width: 40%;
 margin: 10px;
 padding: 10px 0;
 `
-
 const Avatar = styled.img`
 width: 30%;
+`
+const Button = styled.a`
+text-decoration: none;
+color: black;
+border: 2px solid black;
+background: grey;
+padding: 2px 10px;
+cursor: pointer;
+&:hover{
+    background: #333333;
+}
 `
 
 class Card extends Component {
@@ -23,7 +33,7 @@ class Card extends Component {
                 <div>
                     <h3>name: {login}</h3>
                     
-                    <a href={html_url}>{html_url}</a>
+                    <Button href={html_url}>{html_url}</Button>
                 </div>
                 
                
