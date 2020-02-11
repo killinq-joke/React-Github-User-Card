@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Card extends Component {
 
     render() {
-        const { login } = this.props.people;
+        const { login, html_url, avatar_url } = this.props.people;
         return(
             <div>
                 <div>
@@ -11,10 +11,10 @@ class Card extends Component {
                     <p></p>
                     <p></p>
                     <p></p>
-                    <a href={this.props.url}>{this.props.url}</a>
+                    <a href={html_url}>{html_url}</a>
                 </div>
                 
-                <img src={this.props.img}/>
+                <img src={avatar_url}/>
             </div>
         )
     }

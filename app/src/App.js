@@ -19,8 +19,10 @@ class App extends Component {
     Promise.all([axios.get('https://api.github.com/users/killinq-joke'),axios.get('https://api.github.com/users/killinq-joke/followers')])
     
     .then(res => {
-      console.log(res[1])
-      this.setState({ peoples: res[1].data, name: res[0].data.login , img: res[0].data.avatar_url, url: res[0].data.html_url })
+      // console.log(res[0])
+      // console.log(res[1])
+      
+      this.setState({ peoples: res[1].data.concat(res[0].data), name: res[0].data.login , img: res[0].data.avatar_url, url: res[0].data.html_url })
     })
     .catch(err => {
       console.log(err)
@@ -33,11 +35,7 @@ class App extends Component {
     console.log(peoples)
     return <div className="App">
       <CardList peoples={this.state.peoples}/>
-      {/* <Card 
-          name={name}
-          img={img}
-          url={url}
-        /> */}
+      
     </div>;
   }
 }
