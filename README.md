@@ -45,18 +45,18 @@ When you have those completed, you're ready to start coding!
 
 - When your component mounts, send a GET request to the following URL (replacing the palceholder with your Github name):
   - https://api.github.com/users/killinq-joke
-- After you fetch your data, set it to state
+- After you fetch your data, set it to state x
 
 ## STEP 2 - Display the User Data
 
-- Pass the data to the component that will be displaying it
+- Pass the data to the component that will be displaying it x
 - Build out a user card using the data that the Github API returns to you
   - You may reference your old project for this, or you may wish to build this from scratch yourself
 
 ## STEP 3 - Fetch the User's Followers
 
 - When your component mounts, you will also fetch the user's followers using this endpoint:
-  https://api.github.com/users/< Your github name >/followers
+  https://api.github.com/users/killinq-joke/followers
 - Set that data to state as well, and display the data in your app
 
 ## STEP 4 - Style the User Card
